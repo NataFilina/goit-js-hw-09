@@ -11,7 +11,13 @@ function onSubmit(event) {
   const delay = Number(elements.form.elements.delay.value);
   const step = Number(elements.form.elements.step.value);
   const amount = Number(elements.form.elements.amount.value);
-  const promises = [createPromise(1, delay)];
+  const promises = [];
+  if (amount <= 0) {
+    Notiflix.Notify.failure("Amount must be more than 0");
+    promises = [];
+  } else {
+    promises.push(createPromise(1, delay))
+  }
   for (let i = 1; i < amount; i += 1){
     promises.push(createPromise(i + 1, i * step + delay))
   }
