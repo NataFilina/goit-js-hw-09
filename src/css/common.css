@@ -16,3 +16,53 @@ img {
   display: block;
   max-width: 100%;
 }
+
+.btn-start {
+  margin-left: 15px;
+  width: 70px;
+  height: 30px;
+  border: 1px solid rgb(243, 255, 138);;
+  border-radius: 5px;
+  background-color: transparent;
+  color: rgb(101, 171, 250);
+  font-size: 20px;
+  box-shadow: 10px 5px 5px rgb(225, 236, 255);
+  font-style: italic;
+}
+#datetime-picker{
+  height: 30px;
+  border: 1px solid rgb(243, 255, 138);
+    border-radius: 5px;
+    background-color: transparent;
+    color: rgb(101, 171, 250);
+    font-size: 20px;
+    box-shadow: 10px 5px 5px rgb(225, 236, 255);
+    margin-left: 50px;
+    font-style: italic;
+}
+.timer{
+  margin-top: 25px;
+  margin-left: 50px;
+  display: flex;
+  gap: 20px;
+  text-align: center;
+  
+}
+.field {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+  
+}
+.value{
+  font-size: 20px;
+  font-weight: 600;
+  font-style: italic;
+  /* box-shadow: 10px 5px 5px rgb(225, 236, 255); */
+}
+.label{
+  font-weight: 600;
+  font-size: 20px;
+  font-style: italic;
+  text-transform: uppercase;
+}
